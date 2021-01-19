@@ -1,0 +1,11 @@
+# ny cab trip estimator
+
+- name: trip-estimator
+  kind: RealtimeAPI
+  predictor:
+    type: python
+    path: predictor.py
+    config:
+      model: s3://cortex-fa5ef05686/tmp/
+  monitoring:
+    model_type: regression

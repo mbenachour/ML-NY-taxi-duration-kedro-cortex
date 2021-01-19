@@ -1,0 +1,5 @@
+region: us-east-1
+instance_type: t2.medium
+min_instances: 5
+max_instances: 10
+spot: true

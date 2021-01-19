@@ -1,0 +1,10 @@
+test_size: 0.2
+random_state: 3
+boosting_type: 'gbdt'
+objective: 'regression'
+metric: 'rmsle'
+max_depth: 6
+learning_rate: 0.1
+verbose: 0
+early_stopping_round: 20
+n_estimators: 100
