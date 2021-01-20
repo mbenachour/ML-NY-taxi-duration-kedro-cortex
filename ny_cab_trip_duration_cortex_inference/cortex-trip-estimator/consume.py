@@ -1,6 +1,6 @@
 import requests
 
-endpoint = "https://oi9h7ga03j.execute-api.us-east-1.amazonaws.com/trip-estimator"
+endpoint = "https://g06o0hssmj.execute-api.us-east-1.amazonaws.com/trip-estimator"
 payload = {
     "input1":2.0,
     "input2":6.0,
@@ -21,4 +21,6 @@ payload = {
 }
 prediction = requests.post(endpoint, payload)
 
-print(prediction.content)
+trip_duration = str(prediction.content,'utf-8')
+
+print("Trip duration is : ", trip_duration)

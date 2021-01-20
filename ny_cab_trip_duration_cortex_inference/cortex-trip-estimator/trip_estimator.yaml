@@ -6,6 +6,6 @@
     type: python
     path: predictor.py
     config:
-      model: s3://cortex-fa5ef05686/tmp/
+      model: s3://cortex-6a2d11117c/tmp/
   monitoring:
     model_type: regression

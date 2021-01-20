@@ -12,14 +12,14 @@ import joblib
 
 class PythonPredictor:
     def __init__(self, config):
-        os.environ["AWS_ACCESS_KEY_ID"] = "AKIAWWE6G4DQV5EU3SOB"
-        os.environ["AWS_SECRET_ACCESS_KEY"] =  "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"
+        os.environ["AWS_ACCESS_KEY_ID"] = "AKIA3KH6IPR6WOSYNHVU"
+        os.environ["AWS_SECRET_ACCESS_KEY"] =  "IdJRXjhjSmY3b5tX35cKaGRivGTuAifS/Vq0JYi4"
         if os.environ.get("AWS_ACCESS_KEY_ID"):
             s3 = boto3.client("s3")  # client will use your credentials if available
         else:
             s3 = boto3.client("s3", config=Config(signature_version=UNSIGNED))  # anonymous client
 
-        s3.download_file("cortex-fa5ef05686", "tmp/model.pickle", "/tmp/model.pickle")
+        s3.download_file("cortex-6a2d11117c", "tmp/model.pickle", "/tmp/model.pickle")
         self.model = joblib.load(open("/tmp/model.pickle", "rb"))
 
     def predict(self, payload):
