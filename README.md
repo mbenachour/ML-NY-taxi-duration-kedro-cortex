@@ -1,5 +1,7 @@
 # ML-NY-taxi-duration-kedro-cortex
 
+for more details check out the associated article : https://mohamedbenachour.net/2021/01/20/deploy-machine-learning-at-scale-with-kedro-and-cortex-dev/
+
 ## Running training pipelines and nodes  
 
 download the data from : https://public-datasets-mba.s3.amazonaws.com/train.csv
